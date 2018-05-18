@@ -1,0 +1,9 @@
+{
+  "name": "L3M-Projet",
+  "short_name": "L3M",
+  "description": "Projet Angular 5 M2 DCISSrs",  
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#673ab7"
+}

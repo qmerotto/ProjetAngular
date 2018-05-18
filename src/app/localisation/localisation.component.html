@@ -1,0 +1,13 @@
+<p>
+  <agm-map [mapTypeControl]="true" [latitude]="localisationService.current_latitude" [longitude]="localisationService.current_longitude" (mapClick)="setCurrentCoordonnee($event)">
+    <agm-marker [latitude]="localisationService.current_latitude" [longitude]="localisationService.current_longitude" [label]="'Position actuelle'">
+	</agm-marker>
+	
+	<agm-marker *ngFor='let item of localisationService.getItems()' [iconUrl]="'http://maps.google.com/mapfiles/ms/icons/green-dot.png'" [latitude]="item.latitude" [longitude]="item.longitude" [label]="item.label">
+	</agm-marker>
+	
+  </agm-map>
+</p>
+<div *ngIf="localisationService.current_latitude">
+Latitude : {{localisationService.current_latitude}} Longitude : {{localisationService.current_longitude}}
+</div>

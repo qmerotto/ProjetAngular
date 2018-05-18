@@ -1,0 +1,54 @@
+{
+  "configVersion": 1,
+  "index": "/L3M-Projet/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/L3M-Projet/favicon.ico",
+        "/L3M-Projet/index.html",
+        "/L3M-Projet/inline.318b50c57b4eba3d437b.bundle.js",
+        "/L3M-Projet/main.1f257f1952852014252f.bundle.js",
+        "/L3M-Projet/polyfills.c1b408c6abde9b40ec2d.bundle.js",
+        "/L3M-Projet/styles.bff78615d028ba8d3e03.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/L3M-Projet/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/L3M-Projet/index.html": "9ac971e3bac01bfa0c7ce5cb85313e5901d35133",
+    "/L3M-Projet/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "/L3M-Projet/main.1f257f1952852014252f.bundle.js": "d24d76232d29ea395af39a232e12f9a46b8a5055",
+    "/L3M-Projet/polyfills.c1b408c6abde9b40ec2d.bundle.js": "5dea04dd65d26cb670c357f4211913bd6d4b81b9",
+    "/L3M-Projet/styles.bff78615d028ba8d3e03.bundle.css": "69c73c221a6cbb9588df1cde79230705ae84dcc0"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<div class="view">
+  <input 	class			= "toggle"
+          type			= "checkbox"
+          name			= "fait"
+          [ngModel] = "getIsDone()"
+          (ngModelChange) = "setDone($event)"
+  />
+  <label 	class="texte"
+          (dblclick)="isEditing = true"
+
+  >
+    {{getLabel()}}</label>
+	
+	
+  
+</div>
+
+<form>
+  <input  #newTextInput
+          name    = "newTextInput"
+          class   = "edit"
+          [ngModel] = "getLabel()"
+		  (keydown.enter) = "setLabel(newTextInput.value)"
+  />
+</form>
+
+<div class="item-bottom">
+	lat : {{getLatitude()}} long : {{getLongitude()}}
+	<button class="destroy" (click) = "remove()"> </button>
+    <button class="afficher" (click) = "goTo()"> Localiser </button>
+
+</div>
